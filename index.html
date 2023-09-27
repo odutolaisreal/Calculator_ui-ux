@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <nav>
+            <div class="nav1"><img src="./1_20230907_223613_0000.png" alt=""></div>
+            <div class="nav2"><img src="./1_20230907_223613_0000.png" alt=""></div>
+
+        </nav>
+        <div class="input" id="inputText">0</div>
+        <div class="mc">
+            <div class="MC1">MC</div>
+            <div class="MC2">MR</div>
+            <div class="MC3">M+</div>
+            <div class="MC4">M-</div>
+            <div class="MC5">MS</div>
+            <div class="MC6">M</div>
+
+
+        </div>
+        <div class="WE">
+            <div class="WE1">%</div>
+            <div class="WE2">CE</div>
+            <div class="WE3" id="clear">AC</div>
+            <div class="WE4" class="operator" onclick="calculator('/')">/</div>
+
+
+        </div>
+        <div class="numbers">
+            <div onclick="calculator(7)">7</div>
+            <div onclick="calculator(8)">8</div>
+            <div onclick="calculator(9)">9</div>
+          <div class="operator" onclick="calculator('#')">*</div>
+        </div>
+        <div class="numbers">
+            <div onclick="calculator(4)">4</div>
+            <div onclick="calculator(5)">5</div>
+            <div onclick="calculator(6)">6</div>
+            <div class="operator" onclick="calculator('-')">-</div>
+
+        </div>
+        <div class="numbers">
+            <div onclick="calculator(1)">1</div>
+            <div onclick="calculator(2)">2</div>
+            <div onclick="calculator(3)">3</div>
+            <div class="operator" onclick="calculator('+')">+</div>
+
+        </div>
+        <div class="numbers">
+            <div>+/-</div>
+            <div>0</div>
+            <div>.</div>
+            <div  id="result">=</div>
+        </div>
+       
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
