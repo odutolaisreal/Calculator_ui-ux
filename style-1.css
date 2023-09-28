@@ -15,7 +15,7 @@ body {
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 10px 12px 40px 0px rgba(206, 159, 159, 0.2);
     border-radius: 1px;
-    background-color: #307CF9;
+    background: url(./images.jpeg);
     cursor: pointer;
 }
 
@@ -23,11 +23,20 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-
-img {
+.dropdown{
+    background-color: #670a83;
+    font-size: larger;
+    font-weight: 900;
+}
+.dropdown:hover {
+    border: 1px solid #79219c;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(46, 10, 70, 0.2);
+    box-shadow: inset 1px 1px 0px 0px rgba(4, 4, 4, 4.2);
+}
+ .nav2 img {
     border-radius: 60px;
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .input {
@@ -41,7 +50,10 @@ img {
     background-color: #393d3c;
     font-size: 2.5rem;
     overflow-x: auto;
+    width: 95%;
     transition: all .2s ease-in-out;
+    /* width: fit-content; */
+    margin-top: 10px;
 }
 
 .input:hover {
@@ -67,8 +79,7 @@ img {
 .MC5,
 .MC6 {
     background-color: #333335;
-    /* width: 100%; */
-    padding: 8px;
+    padding: 3px;
     text-align: center;
     border-radius: 4px;
     color: #f1f1f1;
